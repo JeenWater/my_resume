@@ -1,0 +1,286 @@
+
+body {
+    font-family: 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+    background-color: #F3F8FF;
+    background: linear-gradient(#f4f4f4e7, rgba(255, 255, 255, 0.762)),url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWdaF6HW1-EFL73de4TSM9fvOdKwWlHhybyUw5ab47RhAfCDS_');
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    /* #06113C */
+    background-color: #06113C;
+    color: #ECF0F1;
+    /* width: 215px;
+    min-height: 100vh;
+    padding: 20px 0; */
+    width: 250px;
+    margin-top: calc((100vh - var(--sidebar-height)) / 2);
+    min-height: 95.99vh;
+    padding: 20px 0 10px 0;
+    position: fixed;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar ul > li > a {
+    display: block;
+}
+
+.sidebar > ul > li {
+    position: relative;
+}
+
+.sidebar ul > li:hover > a {
+    color: #2C3E50;
+    border-radius: 50px;
+    background-color: #f88f26;
+    color: white;
+    transform: translate(0, -5px);  
+}
+
+.sidebar > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    background-color: #f88f26;
+}
+.sidebar {
+    border-radius: 20px;
+    transform: translate(calc(var(--sidebar-width) * -0.8), 0);
+    transition: .5s;
+    margin-left: -15%;
+}
+
+.sidebar:hover {
+    transform: translate(75%, 0);
+}
+
+.content {
+    /* margin-left: 200px;
+    padding: 0px 20px 20px; */
+    margin-left: 209px;
+    padding: 20px;
+    overflow-y: auto;
+    width: calc(100% - 250px);
+}
+
+.content a {
+    color: #383838;
+    text-decoration:none;
+    font-weight: bold;
+    display: block;
+}
+
+.content a:hover{
+    color: #DC5F00;
+}
+
+.profile-photo {
+    /* height: 145px; */
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px #13707c,  0 6px 20px rgba(13, 180, 177, 0.766);
+}
+
+.phone_num {
+    color: #d1cdf1;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+    
+}
+
+.profile-details {
+    max-width: 600px;
+}
+
+.category-container {
+    margin-top: 20px;
+}
+
+.category-container img {
+    height: 20px;
+    border-radius: 10px;
+    border: 0.5px #06113C solid;
+    padding: 1px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: -2px;
+    display: inline-block;
+}
+
+.category-container h2{
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+
+h1{
+    color: #f1953e;
+}
+
+h2 {
+    color: #E67E22;
+    display: inline-block;
+}
+
+h3{
+    text-align:center;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    color:#10a627;
+}
+
+b{
+    color: #0fa1b4;
+}
+
+.phone_num{
+    color: #d1cdf1;
+}
+
+p::selection {
+    background-color: #f88f26;
+    color: #F3F8FF;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table img{
+    height: 60px;
+}
+
+.name_width{
+    width: 150px;
+}
+
+.img_width{
+    width: 150px;
+}
+
+.details_width {
+    width: 500px;
+}
+
+hr{
+    margin: 0px -8.5px 7px;
+    color: #06113C;
+}
+
+th, td {
+    border: 1px solid #06113C;
+    padding: 8px;
+    text-align: center;
+}
+
+th, td::selection{
+    background-color: #f88f26;
+    color: #F3F8FF;
+}
+
+th {
+    background-color: #34495E;
+    color: #ECF0F1;
+}
+
+img {
+    width: auto;
+    height: 90px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea, button {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 82%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #2980B9;
+}
+
+
+/* 
+    6/11/2024 : move the location of the profile section to the sidebar above of the Profile button
+*/
